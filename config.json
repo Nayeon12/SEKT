@@ -1,0 +1,19 @@
+{
+    "train_config": {
+        "batch_size": 256,
+        "num_epochs": 10000,
+        "train_ratio": 0.9,
+        "learning_rate": 0.003,
+        "optimizer": "adam",
+        "seq_len": 300
+    },
+    "dkt": {
+        "emb_size": 100,
+        "hidden_size": 100
+    },
+    "SEKT": {
+        "emb_sizeq": 20,
+        "emb_sizes": 300,
+        "hidden_size": 200
+    }
+}
