@@ -90,7 +90,7 @@ class SEKT(Module):
                       elif(save_sen.count(s[o][k]) > 0 and s[o][k] != s[o][k-1]): 
 
                         sen_loss += pow(2,-save_sen.count(s[o][k])) \
-                        * binary_cross_entropy( ( (y_s[o][k] + (y_s[o][k]*pow(2,-save_sen.count(s[o][k])))).clone().detach() if y_s[o][k] + (y_s[o][k]*pow(2,-save_sen.count(s[o][k]))) <=1 else torch.tensor(1.0)) , rsshft[o][k] ) # 지수함수(2)만큼 가중치
+                        * binary_cross_entropy( ( (y_s[o][k] + (y_s[o][k]*pow(2,-save_sen.count(s[o][k])))).clone().detach() if y_s[o][k] + (y_s[o][k]*pow(2,-save_sen.count(s[o][k]))) <=1 else torch.tensor(1.0)) , rsshft[o][k] )
 
                         save_sen.append(s[o][k])
                         count += 1
