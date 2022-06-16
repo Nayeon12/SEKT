@@ -3,11 +3,11 @@ SEKT : A Spacing-Effect based model for Knowledge Tracing
 
 ![image](https://user-images.githubusercontent.com/49023717/173782680-8f3f5490-5f36-43b4-9248-d9fa5a4d33dc.png)
 
-Using the forgetting curve considered in the spacing effect, the model was trained to predict higher than the original prediction value whenever the user repeats the sentence.
+Using the forgetting curve considered in the spacing effect, SEKT train to predict higher than the original prediction value whenever the user repeats the sentence.
 
 ## Datasets
 
-origin:
+original data:
 > http://sharedtask.duolingo.com/2018.html
 > 
 > https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/8SWHNO
